@@ -1,0 +1,325 @@
+/* General Styles */
+:root {
+    --primary-color: #1a2639;
+    --secondary-color: #0062cc;
+    --accent-color: #f0f0f0;
+    --text-color: #333;
+    --light-text: #f8f8f8;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --icon-color: #0062cc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    margin-bottom: var(--spacing-sm);
+}
+
+p {
+    margin-bottom: var(--spacing-sm);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Layout Containers */
+.about-container,
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: var(--spacing-lg) 0;
+    margin-bottom: var(--spacing-lg);
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+/* About Page Styles */
+.about-content {
+    margin-bottom: var(--spacing-lg);
+}
+
+.image-text-block {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.image-text-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image {
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-sm);
+}
+
+.image-caption {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Team Section */
+.team-section {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+/* Two member team specific styling */
+.team-grid.two-members {
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-member {
+    background-color: var(--accent-color);
+    padding: var(--spacing-md);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.team-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-sm);
+}
+
+.team-role {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Contact Page Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-info {
+    background-color: var(--accent-color);
+    padding: var(--spacing-md);
+    border-radius: 5px;
+}
+
+.info-block {
+    margin-bottom: var(--spacing-md);
+}
+
+.info-block h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Social Icons Styling */
+.social-links {
+    margin-top: var(--spacing-md);
+}
+
+.social-icons {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: 0.5rem;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--secondary-color);
+}
+
+.social-icon i {
+    color: var(--icon-color);
+    font-size: 1.2rem;
+    margin-right: 8px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Contact Form */
+.contact-form-container {
+    background-color: #fff;
+    padding: var(--spacing-md);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0052b0;
+}
+
+/* Map Section */
+.map-section {
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.map-container {
+    margin: var(--spacing-md) 0;
+}
+
+.map-image {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.directions {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Events Section */
+.events-section {
+    background-color: var(--accent-color);
+    padding: var(--spacing-md);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.events-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    margin-top: var(--spacing-sm);
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.events-button:hover {
+    background-color: #0052b0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .image-text-block {
+        flex-direction: column;
+    }
+    
+    .image-text-block.reverse {
+        flex-direction: column;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid.two-members {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .social-icons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+}

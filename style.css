@@ -1,0 +1,166 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* logo hex: #250B6E */
+
+header {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+#book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.book {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.book-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.book h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.book p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.book hr {
+    margin-top: 15px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #book-list {
+        padding: 10px;
+    }
+
+    .book {
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+
+/* Hero section - homepage */
+
+.hero-section {
+    background-image: url('images/hero.jpeg') !important;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+
+/* Carousal part - homepage */
+
+.carousel-item{
+    background-color:#333333;
+}
+
+/* Deals section - homepage */
+
+.deal-card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .deal-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .discount-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #dc3545; /* Bootstrap red */
+    color: white;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  }
+
+  /* Cart page */
+
+  .cart-item { 
+    
+    border-bottom: 1px solid #ccc; 
+    padding: 10px 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+        .controls button { 
+            margin: 0 5px; 
+        }
+        .cart-summary { 
+            margin-top: 20px; 
+            font-weight: bold; 
+        }
+  
+
+
